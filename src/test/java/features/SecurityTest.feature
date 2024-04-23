@@ -52,3 +52,5 @@ Feature: Insurance APP Security Test
       | wrongUser  | supervisor     | 404        | NOT_FOUND   | User wrongUser not found |
       | supervisor | wrong password | 400        | BAD_REQUEST | Password not matched     |
       | wronguser  | wrongpassword  | 404        | NOT_FOUND   | User wronguser not found |
+
+

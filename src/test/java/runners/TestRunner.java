@@ -8,6 +8,6 @@ public class TestRunner {
     Karate runTest() {
         return Karate
                 .run("classpath:features")
-                .tags("@Security");
+                .tags("@Plan_1");
     }
 }
