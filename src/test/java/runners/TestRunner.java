@@ -7,6 +7,7 @@ public class TestRunner {
     @Karate.Test
     Karate runTest() {
         return Karate
-                .run("classpath:features");
+                .run("classpath:features")
+                .tags("@US1_1");
     }
 }
