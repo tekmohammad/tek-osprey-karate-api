@@ -1,3 +1,4 @@
+@Regression
 Feature: CSR Portal Plan Section
 #We have generate valid token first
 #  then Call plan code api request

@@ -1,4 +1,4 @@
-@Smoke @Security
+@Smoke @Security @Regression
 Feature: Insurance APP Security Test
   #    url Step to assign BASE URL for API
   #    Path is to specify with Endpoint
