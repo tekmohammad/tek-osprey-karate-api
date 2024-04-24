@@ -22,3 +22,7 @@ Feature: CSR Portal Plan Section
     When method get
     Then status 200
     And print response
+    Then assert response[0].planExpired == false
+    Then assert response[1].planExpired == false
+    Then assert response[2].planExpired == false
+    Then assert response[3].planExpired == false
