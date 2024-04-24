@@ -37,4 +37,27 @@ Feature: Get Accounts Information
     Then status 200
     And print response
 
+    @Accounts_3
+    Scenario: Get single account with params
+      Given path "/api/token"
+      And request
+        """
+        {
+          "username": "supervisor",
+          "password": "tek_supervisor"
+        }
+        """
+      When method post
+      Then status 200
+      And print response
+      * def validToken = "Bearer " + response.token
+      Given path "/api/accounts/get-account"
+      * def accountId = 6023
+      And header Authorization = validToken
+      And param primaryPersonId = accountId
+      When method get
+      Then status 200
+      And print response
+      And assert response.primaryPerson.id == accountId
 
+      
