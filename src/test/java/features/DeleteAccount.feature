@@ -9,7 +9,7 @@ Feature: Delete Accounts
     * def createAccountResult = callonce read('CreateAccountWithJava.feature')
     * def createdAccountId = createAccountResult.response.id
 
-@Delete_Acount_1
+  @Delete_Account_1
   Scenario: Delete Account with Supervisor user.
     * def tokenResult = callonce read('GenerateValidToken.feature')
     * def token = "Bearer " + tokenResult.response.token
@@ -23,7 +23,7 @@ Feature: Delete Accounts
   #Send request to /api/accounts/delete-account
   #With operator_readonly user
   #Response status should be 403
-  @Delete_Acount_2
+  @Delete_Account_1
   Scenario: Delete Account with Operator user.
     * def tokenResult = callonce read('GenerateOperatorToken.feature')
     * def token = "Bearer " + tokenResult.response.token
