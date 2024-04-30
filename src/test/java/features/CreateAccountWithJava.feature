@@ -3,7 +3,7 @@ Feature: Create Account with Java Data Generator
 
   @CreateAccount_2
   Scenario: Create An Account with Random Email address
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/accounts/add-primary-account"
     * def dataGenerator = Java.type('data.DataGenerator')
     * def randomEmail = dataGenerator.getEmail()

@@ -1,7 +1,7 @@
 Feature: Generate Valid Token
 
   Scenario: Valid token
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     Given path "/api/token"
     And request
       """

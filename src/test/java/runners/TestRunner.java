@@ -8,6 +8,7 @@ public class TestRunner {
     Karate runTest() {
         return Karate
                 .run("classpath:features")
-                .tags("@End2EndCreateAccount");
+                .tags("@Regression")
+                .karateEnv("dev");
     }
 }

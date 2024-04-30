@@ -3,7 +3,7 @@ Feature: Get Accounts Information
 
 
   Background: setup tests
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
   #  Activity
   #  Send request to /api/accounts/get-all-accounts
   #  Without Authentication

@@ -10,7 +10,7 @@ Feature:  Create Account End 2 End Feature
   #Then using /api/accounts/add-account-phone
   #Add a phone to Created Account.
   Background: Setup Test
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
 
     @End2EndCreateAccount
   Scenario: Create Account add phone and Car to Created Account

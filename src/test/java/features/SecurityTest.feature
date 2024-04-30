@@ -6,7 +6,7 @@ Feature: Insurance APP Security Test
   #    method step to send request for method type. post, get, put , delete
   #    status assert response status code
   Background: Setup security test
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/token"
 
   @US1_1

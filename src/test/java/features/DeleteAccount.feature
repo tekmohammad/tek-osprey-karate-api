@@ -5,7 +5,7 @@ Feature: Delete Accounts
   #With supervisor user
   #Response status should be 200
   Background: Setup test with creating account
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     * def createAccountResult = callonce read('CreateAccountWithJava.feature')
     * def createdAccountId = createAccountResult.response.id
 
